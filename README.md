@@ -21,8 +21,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Windows Server 2022
 - Windows 10 (21H2)
--
-
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
@@ -43,7 +41,6 @@ Let's start our lab by creating two Virtual Machines (VMs) in Azure, one with Wi
 <p>
 <img src="https://i.imgur.com/1GvMyEx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-
 <p>
 After connecting to both VMs using Remote Desktop, to ensure connectivity I initiated a perpetual ping from the Client to the DC. The requests were timing out, so I opened Windows Defender Firewall in the DC and enabled Core Networking Diagnostics (ICMPv4 protocol). This allowed the DC to reply to the requests as shown in the command-line interface (CLI).
 <img src="https://i.imgur.com/hfBob3M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -52,7 +49,6 @@ After connecting to both VMs using Remote Desktop, to ensure connectivity I init
 <p>
 <img src="https://i.imgur.com/Xy7nI6r.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
-
 Now we will log back into DC-1 to install Active Directory Domain Services (AD DS) from the Server Manager Dashboard. Once AD DS was installed, I Promoted the VM to Domain Controller so that it could manage devices and accounts on the domain. I setup a new forest as "mydomain.com" afterwards restart then log back into DC-1 as user: "mydomain.com\labuser". If you performed the steps properly you should be able to run AD Users & Computers as shown below.
 <p>
 <img src="https://i.imgur.com/enUXRsE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -60,9 +56,8 @@ Now we will log back into DC-1 to install Active Directory Domain Services (AD D
 <img src="https://i.imgur.com/zw5kild.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p> 
 <img src="https://i.imgur.com/FginuMU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p> 
+
 <img src="https://i.imgur.com/XVyVGRY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
