@@ -26,10 +26,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Create 2 virtual machines, one with Windows 10 (Client VM) and the other with Windows Server 2022 (DC/Domain Controller VM)
+- Step 2: Set the DC’s NIC private IP address from Dynamic to Static
+- Step 3: Connect to both VMs using Remote Desktop
+- Step 4: Initiate a perpetual ping from the Client to the DC; if there is no reply, enable Core Networking Diagnostics in the DC’s firewall
+- Step 5: Install Active Directory Domain Services on the DC and promote it to a domain controller
+- Step 6: Create an admin account and Organizational Units (OU) in Active Directory Users and Computers (ADUC), then log back in using the admin account
+- Step 7: Set the Client’s DNS settings to the DC’s Private IP address, then join the Client to the DC
+- Step 8: Enable Remote Desktop for domain users to access the Client
+- Step 9: Create user accounts using a PowerShell script (run PowerShell ISE as administrator)
+- Step 10: Connect to the Client with Remote Desktop using one of the newly created user accounts
 
 <h2>Deployment and Configuration Steps</h2>
 
