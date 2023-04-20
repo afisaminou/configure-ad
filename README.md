@@ -56,11 +56,11 @@ Now we will log back into DC-1 to install Active Directory Domain Services (AD D
 <img src="https://i.imgur.com/FlamLHS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p> 
 <p>
-Active Directory is all set up! Let's create two(2) Organizational Units named _ADMINS and _EMPLOYEES. Now,  and then let's create a new User "Jane Doe" as an with the username: Jane_admin and add her as a member of Domain Admins Security Group. Logged out from the default account we were in and logged back in as jane.
+Active Directory is all set up! Let's create two(2) Organizational Units (OU) named _ADMINS and _EMPLOYEES. Now, let's create a new User "Jane Doe" as an Administrator with the username: Jane_admin and add her as a member of Domain Admins Security Group. Logged out from the default account we were in and logged back in as jane.
 </p> 
-<img src="https://i.imgur.com/1mshEXa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5GUzjzt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<img src="https://i.imgur.com/hW5UKnr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7lZfJaJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 In order to cintinue setting up my domain, I will join Client-1 to the domain (mydomain.com).From the azure portal we will change client-1's DNS settings to the DC's Private IP address. After you do that restart Client-1 from within the Azure portal. Our pictures below shows verification that client-1 is on the DC-1 DNS.
 </p>
