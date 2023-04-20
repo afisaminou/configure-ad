@@ -51,11 +51,10 @@ After connecting to both VMs using Remote Desktop, to ensure connectivity I init
 <p>
 Now we will log back into DC-1 to install Active Directory Domain Services (AD DS) from the Server Manager Dashboard. Once AD DS was installed, I Promoted the VM to Domain Controller so that it could manage devices and accounts on the domain. I setup a new forest as "mydomain.com" afterwards restart then log back into DC-1 as user: "mydomain.com\labuser". If you performed the steps properly you should be able to run AD Users & Computers as shown below.
 <p>
-<img src="https://i.imgur.com/enUXRsE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/v7QHRGf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p> 
-<img src="https://i.imgur.com/zw5kild.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/FlamLHS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p> 
-<img src="https://i.imgur.com/FginuMU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 Active Directory is all set up! Let's create two(2) Organizational Units named _ADMINS and _EMPLOYEES. Now,  and then let's create a new User "Jane Doe" as an with the username: Jane_admin and add her as a member of Domain Admins Security Group. Logged out from the default account we were in and logged back in as jane.
 </p> 
