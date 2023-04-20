@@ -39,15 +39,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 Let's start our lab by creating two Virtual Machines (VMs) in Azure, one with Windows Server 2022 and the other with Windows 10.Make sure both VMs are in the same Net work and subnet. The Windows Server 2022 VM would serve as the Domain Controller (DC) and the Windows 10 VM would serve as the Client machine. Also, I set the DC’s NIC (Network Inteface Controller) private IP address from Dynamic to Static, so that later in the lab when I configured the Client’s DNS settings (DC’s private IP address), the Static IP address would make it easier for any services to access where a device is. Static IPs are better for remote access to a computer. A static IP address-enabled device does not need the device to send renewal requests.
 <p>
-<img src="https://i.imgur.com/1GvMyEx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xMWxaSv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <p>
 After connecting to both VMs using Remote Desktop, to ensure connectivity I initiated a perpetual ping from the Client to the DC. The requests were timing out, so I opened Windows Defender Firewall in the DC and enabled Core Networking Diagnostics (ICMPv4 protocol). This allowed the DC to reply to the requests as shown in the command-line interface (CLI).
-<img src="https://i.imgur.com/hfBob3M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<img src="https://i.imgur.com/6e26Sg4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>
-<img src="https://i.imgur.com/Xy7nI6r.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dnYvUTl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<img src="https://i.imgur.com/8SRk3AF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 <p>
 Now we will log back into DC-1 to install Active Directory Domain Services (AD DS) from the Server Manager Dashboard. Once AD DS was installed, I Promoted the VM to Domain Controller so that it could manage devices and accounts on the domain. I setup a new forest as "mydomain.com" afterwards restart then log back into DC-1 as user: "mydomain.com\labuser". If you performed the steps properly you should be able to run AD Users & Computers as shown below.
 <p>
