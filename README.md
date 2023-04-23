@@ -62,24 +62,22 @@ Active Directory is all set up! Let's create two(2) Organizational Units (OU) na
 </p>
 <img src="https://i.imgur.com/7lZfJaJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
-In order to cintinue setting up my domain, I will join Client-1 to the domain (mydomain.com).From the azure portal we will change client-1's DNS settings to the DC's Private IP address. After you do that restart Client-1 from within the Azure portal. Our pictures below shows verification that client-1 is on the DC-1 DNS.
+In order to cintinue setting up my domain, I will join Client-1 to the domain (mydomain.com).From the azure portal we will change client-1's DNS settings to the DC's Private IP address. After you do that restart Client-1 from within the Azure portal. Our picture below shows verification that client-1 is on the DC-1 DNS.
 </p>
-<img src="https://i.imgur.com/Vb1jZT8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NGw6Dft.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<img src="https://i.imgur.com/YzkXqqw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 Now we will set up remote desktop for non-administrative users on Client-1. We have to log into Client-1 as an admin and open system properties. Click on "Remote Desktop", allow "domain users" access to remote desktop. Enabling this for Domain Users would allow for any user accounts in the domain to be able to log into Client-1 as a normal user.
 </p>
-<img src="https://i.imgur.com/xjyii2i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/fZ2gcOV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
 </p>
 Finally, to verify that noraml users can RDP into Client-1, I will use a Powershell script to generate 10,000 (Thousands) of users into the domain. After the users are created we will randomly select one and RDP into Client-1.
 </p>
-<img src="https://i.imgur.com/zfIo8Et.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QBffW1K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<img src="https://i.imgur.com/HhKnOwt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Utf0x7S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<img src="https://i.imgur.com/baBi2Ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h3>Bonus Step: How to unlock users' accounts and reset passwords</h3>
 In order to unlock a user's account, right click the user account and click "Properties." 
